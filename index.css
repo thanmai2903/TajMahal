@@ -1,0 +1,44 @@
+.img {
+  width: 80px;
+}
+.Header {
+  display: flex;
+}
+.body {
+  color: white;
+  background-color: black;
+}
+
+.image-slider {
+  width: 1200px; /* Adjust based on your needs */
+  overflow: hidden;
+  border: 2px solid black;
+}
+
+.slider-track {
+  display: flex;
+  width: 120%;
+  animation: scroll 30s linear infinite; /* Adjust timing as needed */
+}
+
+.slider-track img {
+  width: 100%; /* Ensure images fit the slider width */
+  flex-shrink: 0;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.NearAttractions {
+  display: flex;
+  margin-bottom: 5px;
+}
+.NearByAttractions {
+  display: flex;
+  margin-bottom: 5px;
+}
